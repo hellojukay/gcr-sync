@@ -38,7 +38,7 @@ fh = open("p.text","w")
 fh.write(sys.argv[1])
 fh.close()
 
-def read_pass(fh):
+def read_pass(fd):
     os.read(fd, 1024)
     return sys.argv[1].encode()
 pty.spawn("/usr/bin/docker login -u hellojukay --password-stdin",read_pass)
