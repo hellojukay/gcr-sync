@@ -1,5 +1,6 @@
 #!/bin/env python3
-import os
+import pty
+
 class Task:
     def execute(self):
         pull = "docker pull {}".format(self.src)
@@ -11,8 +12,9 @@ class Task:
     def __init__(self,src,dest):
         self.src = src
         self.dest = dest
+
     def sh(self,cmd):
-        code = os.system(cmd)
+        code = pty.spawn(cmd)
         if code != 0:
             os._exit(code)
 
