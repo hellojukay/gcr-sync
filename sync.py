@@ -41,7 +41,7 @@ fh.close()
 def read_pass(fh):
     fh = open("p.text","r")
     data = os.read(fh,1024)
-    return date
+    return data
 pty.spawn("/usr/bin/docker login -u hellojukay --password-stdin",read_pass)
 tasks = read_task("image.txt")
 execut_task(tasks)
