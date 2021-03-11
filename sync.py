@@ -1,5 +1,6 @@
 #!/bin/env python3
 import pty
+import os
 
 class Task:
     def execute(self):
@@ -31,6 +32,6 @@ def execut_task(tasks):
     for task in tasks:
         task.execute()
 
-os.system("echo ${{ secret.DOCKERHUB }} | docker login -u hellojukay --password-stdin")
+pty.spawn("echo ${{ secret.DOCKERHUB }} | docker login -u hellojukay --password-stdin")
 tasks = read_task("image.txt")
 execut_task(tasks)
