@@ -1,6 +1,11 @@
 #!/bin/env python3
 import pty
 import os
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-dockerhub",dest="pass",action="store_true")
+options = parser.parse_args()
 
 class Task:
     def execute(self):
@@ -31,9 +36,9 @@ def read_task(file):
 def execut_task(tasks):
     for task in tasks:
         task.execute()
+def read_pass(fd):
+    return options.pass
 
-os.system("which echo")
-os.system("which docker")
-pty.spawn("/usr/bin/bash -c \"echo ${{ secret.DOCKERHUB }} | docker login -u hellojukay --password-stdin\"")
+pty.spawn("/usr/bin/docker login -u hellojukay --password-stdin",read_pass)
 tasks = read_task("image.txt")
 execut_task(tasks)
