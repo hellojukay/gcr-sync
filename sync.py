@@ -34,6 +34,6 @@ def execut_task(tasks):
 
 os.system("which echo")
 os.system("which docker")
-pty.spawn("/bin/echo ${{ secret.DOCKERHUB }} | /bin/docker login -u hellojukay --password-stdin")
+pty.spawn("/bin/echo ${{ secret.DOCKERHUB }} | /usr/bin/docker login -u hellojukay --password-stdin")
 tasks = read_task("image.txt")
 execut_task(tasks)
