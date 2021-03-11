@@ -34,6 +34,5 @@ def execut_task(tasks):
     for task in tasks:
         task.execute()
 
-os.system("echo {} | docker login -u hellojukay --password-stdin".format(sys.argv[1])
 tasks = read_task("image.txt")
 execut_task(tasks)
