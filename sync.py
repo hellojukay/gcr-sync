@@ -34,13 +34,6 @@ def execut_task(tasks):
     for task in tasks:
         task.execute()
 
-fh = open("p.text","w")
-fh.write(sys.argv[1])
-fh.close()
-
-def read_pass(fd):
-    os.read(fd, 1024)
-    return sys.argv[1].encode()
-pty.spawn("/usr/bin/docker login -u hellojukay --password-stdin",read_pass)
+os.system("echo {} | docker login -u hellojukay --password-stdin".format(sys.argv[1])
 tasks = read_task("image.txt")
 execut_task(tasks)
