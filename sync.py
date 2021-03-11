@@ -38,6 +38,10 @@ fh = open("p.text","w")
 fh.write(sys.argv[1])
 fh.close()
 
-pty.spawn("/usr/bin/docker login -u hellojukay --password-stdin < p.text")
+def read_pass(fh):
+    fh = open("p.text","r")
+    data = os.read(fh,1024)
+    return date
+pty.spawn("/usr/bin/docker login -u hellojukay --password-stdin",read_pass)
 tasks = read_task("image.txt")
 execut_task(tasks)
