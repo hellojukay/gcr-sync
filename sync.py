@@ -15,7 +15,7 @@ class Task:
         self.dest = dest
 
     def sh(self,cmd):
-        code = pty.spawn(cmd)
+        code = os.system(cmd)
         if code != 0:
             os._exit(code)
 
