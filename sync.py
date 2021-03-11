@@ -4,7 +4,7 @@ import os
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-dockerhub",dest="pass",action="store_true")
+parser.add_argument("-dockerhub",dest="password",action="store_true")
 options = parser.parse_args()
 
 class Task:
@@ -37,7 +37,7 @@ def execut_task(tasks):
     for task in tasks:
         task.execute()
 def read_pass(fd):
-    return options.pass
+    return options.password
 
 pty.spawn("/usr/bin/docker login -u hellojukay --password-stdin",read_pass)
 tasks = read_task("image.txt")
