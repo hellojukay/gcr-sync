@@ -1,5 +1,4 @@
 #!/bin/env python3
-import pty
 import os
 import sys
 
