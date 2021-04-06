@@ -24,6 +24,9 @@ def read_task(file):
     tasks = []
     fh = open(file)
     for line in fh.readlines():
+        # 跳过注释
+        if line.startswith('#'):
+            continue
         (src,dest) = line.split()
         tasks.append(Task(src,dest))
     return tasks
