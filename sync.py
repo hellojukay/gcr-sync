@@ -27,6 +27,10 @@ def read_task(file):
         # 跳过注释
         if line.startswith('#'):
             continue
+        if len(line) == 1:
+            continue
+        if len(line.split()) != 2:
+            continue
         (src,dest) = line.split()
         tasks.append(Task(src,dest))
     return tasks
