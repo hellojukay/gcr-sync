@@ -14,3 +14,4 @@ quay.io/eclipse/che-operator:7.33.0  hellojukay/eclipse-che-operator:7.33.0
 quay.io/eclipse/che-tls-secret-creator:alpine-d1ed4ad  hellojukay/eclipse-che-tls-secret-creator:alpine-d1ed4ad
 
 quay.io/eclipse/che--centos--postgresql-96-centos7:9.6-b681d78125361519180a6ac05242c296f8906c11eab7e207b5ca9a89b6344392 hellojukay/eclipse-che--centos--postgresql-96-centos7:9.6
+gcr.io/istio-testing/build-tools:release-1.16-b46bf793553c9bfedf6cf27ddacd67f3768b3a25 hellojukay/istio-testing-build-tools:release-1.16-b46bf793553c9bfedf6cf27ddacd67f3768b3a25
