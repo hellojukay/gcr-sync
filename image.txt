@@ -1,16 +1,1 @@
-k8s.gcr.io/ingress-nginx/controller:v0.44.0 hellojukay/ingress-nginx-controller:v0.44.0
-k8s.gcr.io/ingress-nginx/controller:v0.41.2 hellojukay/ingress-nginx-controller:v0.41.2
-k8s.gcr.io/ingress-nginx/controller:v0.41.0 hellojukay/ingress-nginx-controller:v0.41.0
-k8s.gcr.io/pause:3.2                        hellojukay/pause:3.2
-k8s.gcr.io/kube-proxy:v1.19.4               hellojukay/kube-proxy:v1.19.4
-eu.gcr.io/gitpod-core-dev/build/gitlab-k3s:latest     hellojukay/gitpod-core-dev-gitlab-k3s:latest
-gcr.io/kaniko-project/executor:arm64-v1.3.0           hellojukay/kaniko-project-executor:arm64-v1.3.0
-gcr.io/kaniko-project/executor:debug                  hellojukay/kaniko-project-executor:debug
-gcr.io/kaniko-project/executor:v1.6.0-debug           hellojukay/kaniko-project-executor:v1.6.0-debug
-k8s.gcr.io/metrics-server/metrics-server:v0.5.0       hellojukay/metrics-server-metrics-server:v0.5.0
-
-
-quay.io/eclipse/che-operator:7.33.0  hellojukay/eclipse-che-operator:7.33.0
-
-gcr.io/istio-testing/build-tools:release-1.16-b46bf793553c9bfedf6cf27ddacd67f3768b3a25 hellojukay/istio-testing-build-tools:release-1.16-b46bf793553c9bfedf6cf27ddacd67f3768b3a25
 gcr.io/envoy-ci/envoy-build:7467652575122d8d54e767a68f141598bd855383 hellojukay/envoy-build:7467652575122d8d54e767a68f141598bd855383
