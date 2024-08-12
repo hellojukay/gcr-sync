@@ -1,1 +1,1 @@
-artifacts.codelinaro.org/codelinaro-aimet/aimet-dev:1.31.0.torch-gpu hellojukay/codelinaro-aimet-aimet-dev:1.31.0.torch-gpu
+#artifacts.codelinaro.org/codelinaro-aimet/aimet-dev:1.31.0.torch-gpu hellojukay/codelinaro-aimet-aimet-dev:1.31.0.torch-gpu
